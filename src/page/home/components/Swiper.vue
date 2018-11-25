@@ -1,15 +1,13 @@
 <template>
-     <swiper :options="swiperOption" ref="mySwiper" >
-    <!-- slides -->
-        <swiper-slide>
-            <img class="swiper-img" src="../../../assets/img/1.jpg" alt="">
-            </swiper-slide>
-        <swiper-slide>
-            <img class="swiper-img" src="../../../assets/img/2.jpg" alt="">
-            </swiper-slide>
-        <!-- Optional controls -->
-        <div class="swiper-scrollbar"   slot="scrollbar"></div>
+    <div class="wrapper">
+    <swiper :options="swiperOption">
+      <swiper-slide v-for="item of swiperList" :key="item.id">
+        <img class="swiper-img" :src="item.imgUrl" />
+        
+      </swiper-slide>
+      <div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
+  </div>
 </template>
 
 <script>
@@ -21,9 +19,13 @@
                     pagination:'.swiper-pagination',
                     loop: true
                 },
-                swiperList: [
-                    
-                ]
+                swiperList: [{
+                    id: '01',
+                    imgUrl: 'https://i0.hdslb.com/bfs/archive/fd03a5237097a21fad09fc4fb01e011e57436bea.jpg'
+                },{
+                    id: '02',
+                    imgUrl: 'https://i0.hdslb.com/bfs/archive/de60117383ce744ccfa4500c5a8fdf6cae19d359.jpg'
+                }]
             }
         }
     }
@@ -31,7 +33,7 @@
 
 <style lang="stylus" scoped>
     .wrapper >>> .swiper-pagination-bullet-active
-        background: #fff
+        background: #fff !important 
     .wrapper
         overflow: hidden
         width: 100%
