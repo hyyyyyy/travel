@@ -17,14 +17,21 @@
             return {
                 swiperOption: {
                     pagination:'.swiper-pagination',
-                    loop: true
+                    loop: true,
+                    autoplay: 3000
                 },
                 swiperList: [{
                     id: '01',
-                    imgUrl: 'https://i0.hdslb.com/bfs/archive/fd03a5237097a21fad09fc4fb01e011e57436bea.jpg'
+                    imgUrl: 'http://img1.qunarzz.com/piao/fusion/1811/7c/8e5c4ab8ee8b7402.jpg_750x200_dd7a38dd.jpg'
                 },{
                     id: '02',
-                    imgUrl: 'https://i0.hdslb.com/bfs/archive/de60117383ce744ccfa4500c5a8fdf6cae19d359.jpg'
+                    imgUrl: 'http://img1.qunarzz.com/piao/fusion/1811/4d/6706bf772c05ce02.jpg_750x200_773e75f0.jpg'
+                },{
+                    id: '03',
+                    imgUrl: 'http://img1.qunarzz.com/piao/fusion/1811/31/da037478f37cf202.jpg_750x200_fe28d396.jpg'
+                },{
+                    id: '04',
+                    imgUrl: 'http://img1.qunarzz.com/piao/fusion/1809/d4/e298dff35d3af802.jpg_750x200_9b0d56c1.jpg'
                 }]
             }
         }
@@ -38,7 +45,7 @@
         overflow: hidden
         width: 100%
         height: 0
-        padding-bottom: 50%
+        padding-bottom: 26.6%
         background: #eee
         .swiper-img
             width: 100%
