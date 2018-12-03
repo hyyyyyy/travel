@@ -22,26 +22,29 @@
 <script>
     export default{
         name: 'HomeRecommend',
-        data () {
-            return {
-                list:[{
-                    id: "01",
-                    title:"宠物掉进粪池",
-                    desc:"一家四口去营救，一个都没活",
-                    imgUrl: "http://img1.qunarzz.com/sight/p0/1611/96/96c7b547622c8334a3.img.jpg_200x200_cd0b30b0.jpg"
-                },{
-                    id: "02",
-                    title:"北京申奥成功",
-                    desc:"大清亡辣，大清亡辣，大清亡辣，大清亡辣，大清亡辣",
-                    imgUrl: "http://img1.qunarzz.com/sight/p0/1611/96/96c7b547622c8334a3.img.jpg_200x200_cd0b30b0.jpg"
-                },{
-                    id: "03",
-                    title:"叙利亚GKD部队",
-                    desc:"GKD,GKD,GKD,KKP,KKP,KKP",
-                    imgUrl: "http://img1.qunarzz.com/sight/p0/1611/96/96c7b547622c8334a3.img.jpg_200x200_cd0b30b0.jpg"
-                }]
-            }
-        }
+        props:{
+          list:Array
+        },
+        // data () {
+        //     return {
+        //         list:[{
+        //             id: "01",
+        //             title:"宠物掉进粪池",
+        //             desc:"一家四口去营救，一个都没活",
+        //             imgUrl: "http://img1.qunarzz.com/sight/p0/1611/96/96c7b547622c8334a3.img.jpg_200x200_cd0b30b0.jpg"
+        //         },{
+        //             id: "02",
+        //             title:"北京申奥成功",
+        //             desc:"大清亡辣，大清亡辣，大清亡辣，大清亡辣，大清亡辣",
+        //             imgUrl: "http://img1.qunarzz.com/sight/p0/1611/96/96c7b547622c8334a3.img.jpg_200x200_cd0b30b0.jpg"
+        //         },{
+        //             id: "03",
+        //             title:"叙利亚GKD部队",
+        //             desc:"GKD,GKD,GKD,KKP,KKP,KKP",
+        //             imgUrl: "http://img1.qunarzz.com/sight/p0/1611/96/96c7b547622c8334a3.img.jpg_200x200_cd0b30b0.jpg"
+        //         }]
+        //     }
+        // }
     }
 </script>
 
