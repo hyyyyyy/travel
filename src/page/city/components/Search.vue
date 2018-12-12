@@ -69,10 +69,13 @@ export default {
   },
   methods: {
     handleCityClick (city) {
-      this.changeCity(city)
+      this.$store.commit('changeCity',city)
       this.$router.push('/')
-    },
-    ...mapMutations(['changeCity'])
+    }
+    //   this.changeCity(city)
+    //   this.$router.push('/')
+    // },
+    // ...mapMutations(['changeCity'])
   },
   mounted () {
     this.scroll = new Bscroll(this.$refs.search)
