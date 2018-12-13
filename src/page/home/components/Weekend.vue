@@ -1,5 +1,5 @@
 <template>
-    <div>
+  <div>
     <div class="title">周末去哪儿</div>
     <ul>
       <li
@@ -20,32 +20,12 @@
 </template>
 
 <script>
-    export default{
-        name: 'HomeRecommend',
-        props:{
-          list:Array
-        },
-        // data () {
-        //     return {
-        //         list:[{
-        //             id: "01",
-        //             title:"宠物掉进粪池",
-        //             desc:"一家四口去营救，一个都没活",
-        //             imgUrl: "http://img1.qunarzz.com/sight/p0/1611/96/96c7b547622c8334a3.img.jpg_200x200_cd0b30b0.jpg"
-        //         },{
-        //             id: "02",
-        //             title:"北京申奥成功",
-        //             desc:"大清亡辣，大清亡辣，大清亡辣，大清亡辣，大清亡辣",
-        //             imgUrl: "http://img1.qunarzz.com/sight/p0/1611/96/96c7b547622c8334a3.img.jpg_200x200_cd0b30b0.jpg"
-        //         },{
-        //             id: "03",
-        //             title:"叙利亚GKD部队",
-        //             desc:"GKD,GKD,GKD,KKP,KKP,KKP",
-        //             imgUrl: "http://img1.qunarzz.com/sight/p0/1611/96/96c7b547622c8334a3.img.jpg_200x200_cd0b30b0.jpg"
-        //         }]
-        //     }
-        // }
-    }
+export default {
+  name: 'HomeWeekend',
+  props: {
+    list: Array
+  }
+}
 </script>
 
 <style lang="stylus" scoped>
@@ -71,4 +51,3 @@
       color: #ccc
       ellipsis()
 </style>
-

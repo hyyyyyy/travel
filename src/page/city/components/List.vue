@@ -61,14 +61,11 @@ export default {
   },
   methods: {
     handleCityClick (city) {
-      // this.changeCity(city)
-      // this.$router.push('/')
-      this.$store.commit('changeCity',city)
+      this.changeCity(city)
       this.$router.push('/')
-    }
+    },
+    ...mapMutations(['changeCity'])
   },
-  //   ...mapMutations(['changeCity'])
-  // },
   watch: {
     letter () {
       if (this.letter) {
