@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import CommonGallary from '@/common/gallary/Gallary'
+import CommonGallary from 'common/gallary/Gallary'
 export default {
   name: 'DetailBanner',
   components: {
@@ -42,9 +42,6 @@ export default {
     handleGallaryClose () {
       this.showGallary = false
     }
-  },
-  components: {
-    
   }
 }
 </script>

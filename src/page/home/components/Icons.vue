@@ -51,7 +51,7 @@ export default {
   @import '~styles/mixins.styl'
   .icons >>> .swiper-container
     height: 0
-    padding-bottom: 50%
+    padding-bottom: 40%
   .icons
     margin-top: .1rem
     .icon
