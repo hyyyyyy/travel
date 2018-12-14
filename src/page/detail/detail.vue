@@ -1,19 +1,26 @@
 <template>
-    <detail-banner></detail-banner>
+    <div>
+        <detail-banner :sightName="sightName" :bannerImg="bannerImg" :bannerImgs="gallaryImgs"></detail-banner>
+        <!-- <common-gallary></common-gallary> -->
+    </div>  
 </template>
 
 <script>
 import DetailBanner from './components/Banner'
+import DetailHeader from './components/Header'
+import CommonGallary from 'common/gallary/Gallary'
 import axios from 'axios'
 export default{
     name: 'detail',
     components:{
-        DetailBanner:DetailBanner
+        DetailBanner,
+        DetailHeader,
+        CommonGallary,
     },
     data () {
         return {
-            sightName: [],
-            bannerImg: [],
+            sightName: '',
+            bannerImg: '',
             gallaryImgs: [],
             list: []
         }
@@ -33,7 +40,9 @@ export default{
         if (res.ret && res.data) {
             const data = res.data
             this.sightName = data.sightName
+            console.log(data.sightName)
             this.bannerImg = data.bannerImg
+            console.log(data.bannerImg)
             this.gallaryImgs = data.gallaryImgs
             this.list = data.categoryList
         }
