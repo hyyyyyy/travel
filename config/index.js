@@ -10,6 +10,7 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
+    //ajax设置
     proxyTable: {
       '/api': {
         target: 'http://localhost:8081',
@@ -50,6 +51,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
+    //后端读取存放路径
     assetsPublicPath: '/',
 
     /**

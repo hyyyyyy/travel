@@ -49,16 +49,16 @@ export default {
                 this.recommendList = data.recommendList
                 this.weekendList = data.weekendList
             }
-        }
+        },
     },
     mounted () {
         // 生命周期函数
         this.getHomeInfo()
+        // this.chumo()
     }
 }
 </script>
 
-<style>
-    
+<style lang="stylus">
 </style>
 

@@ -1,9 +1,9 @@
 <template>
-  <!-- <div class="container" @click="handleGallaryClick">
+  <div class="container" @click="handleGallaryClick">
     <div class="wrapper">
       <swiper :options="swiperOptions">
         <swiper-slide
-          v-for="(item, index) in imgs"
+          v-for="(item, index) in img"
           :key="index"
         >
           <img class="gallary-img" :src="item" />
@@ -11,13 +11,36 @@
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
     </div>
-  </div> -->
-  <div>test</div>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'CommonGallary',
+  props: {
+    img: {
+      type: Array,
+      default () {
+        return []
+      }
+    }
+  },
+  data () {
+    return {
+      swiperOptions: {
+        pagination: '.swiper-pagination',
+        paginationType: 'fraction',
+        observeParents: true,
+        observer: true
+      }
+    }
+  },
+  methods: {
+    handleGallaryClick () {
+      this.$emit('close')
+      // alert(123)
+    }
+  }
 }
 </script>
 
