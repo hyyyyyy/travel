@@ -35,14 +35,14 @@ export default{
     },
     handleGetDataSucc (res) {
         res = res.data
-        console.log(res);
+        // console.log(res);
         
         if (res.ret && res.data) {
             const data = res.data
             this.sightName = data.sightName
-            console.log(data.sightName)
+            // console.log(data.sightName)
             this.bannerImg = data.bannerImg
-            console.log(data.bannerImg)
+            // console.log(data.bannerImg)
             this.gallaryImgs = data.gallaryImgs
             this.list = data.categoryList
         }
