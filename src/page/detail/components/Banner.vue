@@ -1,6 +1,6 @@
 <template>
 <div>
-    <!-- <div class="banner" @click="handleBannerClick">
+    <div class="banner" @click="handleBannerClick">
       <img class="banner-img" :src="bannerImg" />
       <div class="banner-info">
         <div class="banner-tittle">
@@ -11,7 +11,7 @@
           {{this.bannerImgs.length}}
         </div>
       </div>
-    </div> -->
+    </div>
     <common-gallary></common-gallary>
 </div>
     

@@ -1,6 +1,6 @@
 <template>
-  <div class="icons">
-    <swiper :options="swiperOption">
+    <div class="icons">
+    <swiper :options="swiperOption" >
       <swiper-slide v-for="(page, index) of pages" :key="index">
         <div
           class="icon"
@@ -19,39 +19,39 @@
 
 <script>
 export default {
-  name: 'HomeIcons',
-  props: {
-    list: Array
-  },
-  data () {
-    return {
-      swiperOption: {
-        autoplay: false
-      }
-    }
-  },
-  computed: {
-    pages () {
-      const pages = []
-      this.list.forEach((item, index) => {
-        const page = Math.floor(index / 8)
-        if (!pages[page]) {
-          pages[page] = []
+    name: 'HomeIcons',
+    props:{
+        list:Array
+    },
+    data () {
+        return {
+            swiperOption: {
+                pautoplay: false
+            }
         }
-        pages[page].push(item)
-      })
-      return pages
+    },
+    computed: {
+        pages () {
+            const pages = []
+            this.list.forEach((item, index) => {
+            const page = Math.floor(index / 8)
+            if (!pages[page]) {
+                pages[page] = []
+            }
+            pages[page].push(item)
+            })
+            return pages
+        }
     }
-  }
 }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus" scoped > 
   @import '~styles/varibles.styl'
   @import '~styles/mixins.styl'
   .icons >>> .swiper-container
     height: 0
-    padding-bottom: 40%
+    padding-bottom: 50%
   .icons
     margin-top: .1rem
     .icon
@@ -84,3 +84,4 @@ export default {
         color: $darkTextColor
         ellipsis()
 </style>
+
