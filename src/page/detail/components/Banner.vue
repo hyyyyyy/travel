@@ -42,9 +42,6 @@ export default {
     handleGallaryClose () {
       this.showGallary = false
     }
-  },
-  components: {
-    
   }
 }
 </script>
