@@ -52,7 +52,7 @@ module.exports = {
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     //后端读取存放路径
-    assetsPublicPath: '/',
+    assetsPublicPath: '/travel',
 
     /**
      * Source Maps
