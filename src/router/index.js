@@ -5,13 +5,13 @@ import City from "@/page/city/city"
 import detail from "@/page/detail/detail"
 
 Vue.use(Router)
-
+//这样写，主页就变成异步加载了
 export default new Router({
   routes: [
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: ()=> import('@/page/home/Home')
     },{
       path: '/city',
       name: 'City',
